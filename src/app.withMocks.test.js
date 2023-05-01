@@ -1,11 +1,11 @@
-import { ExpressAndJestWebApplicationFactory } from './WebApplicationFactory.js';
+import { ExpressAndJestWebApplicationFactory } from './WebApplicationFactory';
 import { jest } from '@jest/globals';
 
 // This is unstable because Jest are still working on the
 // ESM Mocking API, but if you're not using ESM, regular
 // jest.mock calls would work just fine here
 
-jest.unstable_mockModule('./WeatherService.js', () => {
+jest.unstable_mockModule('./WeatherService', () => {
     return {
         getWeather: function () {
             return {

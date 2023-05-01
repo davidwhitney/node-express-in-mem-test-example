@@ -1,5 +1,5 @@
 import app from './api.js';
-import { ExpressAndJestWebApplicationFactory } from './WebApplicationFactory.js';
+import { ExpressAndJestWebApplicationFactory } from './WebApplicationFactory';
 
 describe('Application (with ExpressAndJestWebApplicationFactory)', () => {
 

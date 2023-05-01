@@ -1,5 +1,4 @@
 import app from './api.js';
-import { ExpressAndJestWebApplicationFactory } from './WebApplicationFactory.js';
 
 // Example: Just using raw server to listen
 
