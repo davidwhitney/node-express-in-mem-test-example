@@ -20,7 +20,7 @@ describe('Application (with ExpressAndJestWebApplicationFactory and Mocking)', (
 
     let factory;
     beforeAll(async () => {
-        const app = (await import('./api.js')).default; // <-- Jest ESM Mocking import
+        const app = (await import('./api')).default; // <-- Jest ESM Mocking import
         factory = new ExpressAndJestWebApplicationFactory(app);
         await factory.start();
     });
